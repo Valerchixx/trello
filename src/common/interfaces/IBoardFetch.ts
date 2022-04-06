@@ -1,4 +1,4 @@
-import ICard from './ICard'
+import ICard from './ICard';
 
 interface user{
     id:number,
