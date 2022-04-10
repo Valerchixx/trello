@@ -41,7 +41,7 @@ function Modal(props:{handleModal?: () => void, open:boolean}) {
 		<div className={props.open ? `${styles.modal} ${styles.active}` : styles.modal} onClick={props.handleModal}>
 			<div className={props.open ? `${styles.modalContent} ${styles.active}` : styles.modalContent} onClick={e => e.stopPropagation()}>
 				<h1>Add new desk</h1>
-				<input type="text" value={title.title} onChange={ValidateInput} placeholder="Enter desk title" className={flag ? styles.input : `${styles.input} ${styles.wrong}`} />
+				<input type="text" onChange={ValidateInput} placeholder="Enter desk title" className={flag ? styles.input : `${styles.input} ${styles.wrong}`} />
 				<button type="button" onClick={AddBoard} className={styles.btn}>Create board</button>
 			</div>
 		</div>
