@@ -1,7 +1,6 @@
-
 import React from 'react';
 import {
-	BrowserRouter as Router,
+	HashRouter as Router,
 	Switch,
 	Route,
 	Redirect,
@@ -19,7 +18,6 @@ import './App.css';
 export default function App() {
 	const dispatch = useDispatch();
 	const error = useSelector((state:RootState) => state.errorReducer.error);
-	// Const state = useSelector((state:RootState) => console.log(state));
 	const token = localStorage.getItem('token');
 
 	const onDragEnd = (result: any) => {
