@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Valerchixx.github.io/trello-frontend",
   "name": "my-trello-frontend",
   "version": "0.1.0",
   "private": true,
@@ -32,7 +33,9 @@
     "start": "react-scripts start",
     "build": "react-scripts --max_old_space_size=4096 build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@types/node": "^17.0.7",
@@ -54,6 +57,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^3.2.3",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.5",
     "prettier": "^2.5.1",
